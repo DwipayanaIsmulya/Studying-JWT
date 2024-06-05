@@ -1,0 +1,22 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJEd2lwYXlhbmEgSXNtdWx5YSIsImVtYWlsIjoiZHdpMTIzNDVAZ21haWwuY29tIiwiaWF0IjoxNzEzMzIyNDM0LCJleHAiOjE3MTMzMjI0NTR9.UnMQqUmJ1dVhA-vlkthBsqXeTxBbSayEsfLGo4Qk_dM
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Dwipayana Ismulya",
+    "email": "dwi12345@gmail.com",
+    "password": "123",
+    "confPassword": "123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "dwi12345@gmail.com",
+    "password": "123"
+}
